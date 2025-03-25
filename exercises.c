@@ -129,6 +129,6 @@ int parentesisBalanceados(char *cadena) {
       }
       i++;
    }
-   return isEmpty(P);
+   return pop(P) == NULL;
 }
 
