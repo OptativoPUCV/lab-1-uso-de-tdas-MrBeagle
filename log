@@ -6,3 +6,23 @@ Sun, Mar 23, 2025  7:50:56 PM:
  tests:  0|5
 total_score: 0/70
 d399430
+Tue, Mar 25, 2025  5:53:08 PM: 
+ exercises.c | 51 +++++++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 49 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'crea_lista':
+exercises.c:49:7: error: implicit declaration of function 'push_back'; did you mean 'pushBack'? [-Werror=implicit-function-declaration]
+   49 |       push_back(L, num);
+      |       ^~~~~~~~~
+      |       pushBack
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:127:14: error: implicit declaration of function 'is_empty' [-Werror=implicit-function-declaration]
+  127 |          if (is_empty(P)) {
+      |              ^~~~~~~~
+exercises.c:128:13: error: implicit declaration of function 'free_stack'; did you mean 'create_stack'? [-Werror=implicit-function-declaration]
+  128 |             free_stack(P);
+      |             ^~~~~~~~~~
+      |             create_stack
+cc1.exe: all warnings being treated as errors
+Compilation failed
+eb06aa3
